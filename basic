@@ -1,0 +1,56 @@
+# brings user path to sudo
+alias sudoi='sudo -i env PATH=$PATH'
+alias sudoh='sudo -H'
+
+alias off="sudo shutdown -h now"
+alias reboot="sudo shutdown -r now"
+
+# search for a running process
+alias psl='ps -ef | grep'
+# kill running process
+alias k='sudo kill'
+
+alias path="echo $PATH"
+
+alias df='df -h -x supermount'
+alias du='du -h'
+alias egrep='egrep --color'
+alias fgrep='fgrep --color'
+alias grep='grep --color'
+
+rsynchc() { rsync --help | grep "\-$1"; }
+alias rsynch="rsynchc"
+
+# Directory/File
+alias ls='ls -F --color=auto'
+alias l='ls'
+alias la='ls -a'
+alias ll='ls -l'
+alias lla='ls -l -a'
+alias lsd='ls -d */'
+alias md='mkdir'
+alias mv='mv -i'
+alias p='cd -'
+alias rd='rmdir'
+alias rm='rm -i'
+alias cd..='cd ..'
+alias cp='cp -i'
+
+change-ext() {
+shopt -s globstar
+rename -n 's/.'+$1+'/.'+$2+'/' **
+}
+
+alias chext=change-ext
+
+#edit files
+alias efstab="sudo gedit /etc/fstab"
+alias ea="atom ~/.bash_aliases"
+alias ead="atom ~/.kbd-aliases/"
+alias eadg="gedit ~/.kbd-aliases/"
+alias eag="gedit ~/.bash_aliases"
+alias essh="gedit ~/.ssh/config"
+alias ebrc='gedit ~/.bashrc'
+
+# Will scrub all and reload only aliases in .bash_aliaes
+alias reloada="unalias -a && source ~/.bash_aliases && compgen -a"

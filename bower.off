@@ -1,0 +1,5 @@
+# bower
+alias bidv="bower install --save-dev"
+alias brdv="bower uninstall --save-dev"
+alias bi="bower install --save"
+alias br="bower uninstall --save"

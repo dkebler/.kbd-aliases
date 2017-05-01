@@ -1,0 +1,24 @@
+#docker - add users to docker group to avoid needing sudo
+# run a command on a container
+alias dkcr="docker run"
+# start a container
+alias dkcs="docker start"
+# restart all running containers
+alias dkcrr="docker restart $(docker ps -q)"
+# start all exited containers
+alias dkcsu="docker start $(docker ps --filter "status=exited")"
+# ls stopped, la all, l running
+alias dkcls="docker ps --filter "status=exited""
+alias dkcla="docker ps -a "
+alias dkcl="docker ps "
+alias dkil="docker images --digests=true"
+alias dkir="docker rmi $(docker images -q)"
+alias dks="sudo service docker"
+alias dkcstpa="docker stop $(docker ps -a -q)"
+# remove unrunning containers
+alias dkcrm="docker rm $(docker ps -a -q)"
+# stop and remove
+alias dkcsrm="docker rm -f $(docker ps -a -q)"
+# cleans out unused/dangling aufs volumes  -  run this occasionally
+alias dkclean="docker volume ls -qf dangling=true | xargs -r docker volume rm"
+alias dkde="gksudo gedit /etc/default/docker"

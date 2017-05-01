@@ -1,0 +1,12 @@
+alias nws="sudo systemctl start systemd-networkd"
+alias nwe="sudo systemctl enable systemd-networkd"
+alias nwd="sudo systemctl disable systemd-networkd"
+alias nwstp="sudo systemctl stop systemd-networkd"
+alias nwr="sudo systemctl restart systemd-networkd"
+alias nwst="sudo systemctl status systemd-networkd"
+alias nwj="sudo journalctl -xn"
+
+alias nid="sudo ip link set down"
+alias niu="sudo ip link set up"
+alias nir1="nid eth1 && niu eth1 && nwr"
+alias nir1="nid eth1 && niu eth1 && nwr"

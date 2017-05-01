@@ -1,0 +1,14 @@
+# if parameter(s) is needed instead of just at the end of alias then create a "little" function instead.
+# like   mymv() { mv $1 $2; }
+# or    rsynchc() { rsync --help | grep "\-$1"; }
+
+
+alias sdns="nmcli device show eth0 | grep IP4.DNS"
+# shows running processes with ntfs that might hang gparted, then kill with next command
+alias ntfs='ps -ef | egrep "dosfsck|ntfs"'
+
+alias lo="gnome-session-quit"
+
+#mongo via docker container name mongodbmo
+alias mg="docker exec -it mongodbserver mongo"
+alias mongodb="docker exec -it mongodbserver mongo"

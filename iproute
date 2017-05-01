@@ -1,0 +1,6 @@
+# bring an interface up or down
+alias nid="sudo ip link set down"
+alias niu="sudo ip link set up"
+# restart eth1 interface including networkd restart
+alias nir1="nid eth1 && niu eth1 && nwr"
+alias nir1="nid eth1 && niu eth1 && nwr"

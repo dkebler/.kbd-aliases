@@ -1,0 +1,6 @@
+for f in ~/.kbd-aliases/*; do
+if [ ${f: -4} != ".off" ] && [ $(basename $f) != "README.md" ] ; then
+  # echo 'loading alises '$f
+. $f
+fi
+done

@@ -1,0 +1,5 @@
+alias python="python3"
+alias pipu="sudo -H pip install -U"
+alias pipul="pip install -U"
+alias pipi="sudo pip install"
+alias piplo="pip list --outdated"
