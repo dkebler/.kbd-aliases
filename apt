@@ -1,8 +1,11 @@
-# apt package manager
+nod# apt package manager
 alias install="sudo apt-get install"
 # change depending on distro - need to have backports loaded in apt sources
 # FYI can just load individual binaries from the wiki using deb files say from testing or unstable
 alias installb="sudo apt-get -t jessie-backports install"
 alias remove="sudo apt-get remove"
-alias aremove="sudo atp-get autoremove"
-alias purge="sudo atp-get purge"
+alias aremove="sudo apt-get autoremove"
+alias purge="sudo apt-get purge"
+alias update="sudo apt-get update"
+alias esources='sudo nano /etc/apt/sources.list.d/'
+alias ppa='sh -c '\''sudo add-apt-repository ppa:$1/ppa'\'' _'
