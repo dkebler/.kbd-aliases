@@ -43,14 +43,17 @@ rename -n 's/.'+$1+'/.'+$2+'/' **
 
 alias chext=change-ext
 
-#edit files
-alias efstab="sudo gedit /etc/fstab"
-alias ea="atom ~/.bash_aliases"
-alias ead="atom ~/.kbd-aliases/"
-alias eadg="gedit ~/.kbd-aliases/"
-alias eag="gedit ~/.bash_aliases"
-alias essh="gedit ~/.ssh/config"
-alias ebrc='gedit ~/.bashrc'
+# edit files
+# set the system editor using EDITOR environment variable
+editor() { ${EDITOR} $1; }
+
+alias efstab="sudo editor /etc/fstab"
+alias ea="editor ~/.bash_aliases"
+alias ead="editor ~/.kbd-aliases/"
+alias eadg="editor ~/.kbd-aliases/"
+alias eag="editor ~/.bash_aliases"
+alias essh="editor ~/.ssh/sshd_config"
+alias ebrc='editor ~/.bashrc'
 
 # Will scrub all and reload only aliases in .bash_aliaes
 alias reloada="unalias -a && source ~/.bash_aliases && compgen -a"

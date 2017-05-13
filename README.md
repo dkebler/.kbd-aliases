@@ -34,3 +34,7 @@ to your `.bash_aliases` file.  At which point you could move your aliases there 
 Every file in `.kdb-aliases` will be sourced except ones ending with a `.off` extension and the README.md file of course.
 
 If need to turn off some of your aliases just add `.off` to the file name rather than move or delete the file...simple.
+
+To make use of aliases that open an editor set an EDITOR environment variable in .bashrc
+e.g.
+`export EDITOR=nano`

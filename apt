@@ -1,4 +1,4 @@
-nod# apt package manager
+# apt package manager
 alias install="sudo apt-get install"
 # change depending on distro - need to have backports loaded in apt sources
 # FYI can just load individual binaries from the wiki using deb files say from testing or unstable
