@@ -1,0 +1,3 @@
+# i2c
+alias i2cs='i2cdetect -y 1'
+alias erpic='sudo editor /boot/config.txt'
