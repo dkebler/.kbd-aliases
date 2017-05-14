@@ -52,7 +52,7 @@ alias ea="editor ~/.bash_aliases"
 alias ead="editor ~/.kbd-aliases/"
 alias eadg="editor ~/.kbd-aliases/"
 alias eag="editor ~/.bash_aliases"
-alias essh="editor ~/.ssh/sshd_config"
+alias essh="sudo editor /etc/ssh/sshd_config"
 alias ebrc='editor ~/.bashrc'
 
 # Will scrub all and reload only aliases in .bash_aliaes
