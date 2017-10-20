@@ -16,3 +16,6 @@ alias npmrg="npm uninstall -g"
 alias npmul="echo npm installed version && npm --version && echo npm latest version available && npm view npm@latest version && echo any key to continue npm upgrade or break && read && sudo npm install -g npm@latest"
 alias npmug="npm-check -g -u"
 alias npmu="npm-check -u"
+alias npmpub="npm publish --access public"
+# only works for local registry not npm
+alias npmrepub="npm unpublish --force && npm publish"
