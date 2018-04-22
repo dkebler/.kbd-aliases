@@ -1,0 +1,3 @@
+alias sports='dmesg | egrep --color "serial|tty"'
+alias connewest='screen $(ls -tw 1 /dev/tty* | head -1) 115200'
+alias conacm0='screen /dev/ttyACM0 115200'
