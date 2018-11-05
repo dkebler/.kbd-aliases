@@ -21,5 +21,5 @@ alias npmu="npm-check -u"
 alias npmpub="npm publish --access public"
 # only works for local registry not npm
 alias npmrepub="npm unpublish --force && npm publish"
-alias npmlpub="npm publish --registry http://0.0.0.0:8082"
-alias npmrpub="npm publish --registry https://registry.npmjs.org/
+alias npmlpub="npm publish --registry http://trantor:8082"
+alias npmrpub="npm publish --access public --registry https://registry.npmjs.org"
